@@ -1,7 +1,7 @@
 package quickSort
 
 //来源于WIKI 网站
-func quic_wiki(data []int) []int {
+func QuicWiki(data []int) []int {
 	if len(data) <= 1 {
 		return data
 	}
@@ -18,8 +18,7 @@ func quic_wiki(data []int) []int {
 		}
 	}
 	data[head] = mid
-	quic_wiki(data[:head])
-	quic_wiki(data[head+1:])
+	QuicWiki(data[:head])
+	QuicWiki(data[head+1:])
 	return data
-
 }
