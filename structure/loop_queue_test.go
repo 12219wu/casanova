@@ -1,4 +1,4 @@
-package loopQueue
+package structure
 
 import "testing"
 
